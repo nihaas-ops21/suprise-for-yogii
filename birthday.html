@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>For My Cutie Pie 💖</title>
+
+<style>
+body {
+    margin:0;
+    font-family: Arial;
+    background: linear-gradient(135deg,#ff758c,#ff7eb3);
+    color:white;
+    text-align:center;
+    overflow:hidden;
+}
+
+/* PAGE */
+.container {
+    display:none;
+    height:100vh;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    padding:20px;
+}
+.active {display:flex;}
+
+button {
+    padding:10px 20px;
+    border:none;
+    border-radius:10px;
+    background:white;
+    color:#ff4b5c;
+    margin-top:15px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.chat {
+    background:white;
+    color:black;
+    padding:15px;
+    border-radius:15px;
+    margin:5px;
+    max-width:330px;
+    white-space:pre-line;
+}
+
+/* NAME */
+.name {
+    font-size:40px;
+    font-weight:bold;
+    margin-top:20px;
+    animation: glow 1.5s infinite alternate;
+}
+@keyframes glow {
+    from {text-shadow:0 0 10px white;}
+    to {text-shadow:0 0 25px yellow;}
+}
+
+/* HEARTS */
+.heart {
+    position:absolute;
+    animation:float 5s linear infinite;
+}
+@keyframes float {
+    from{transform:translateY(100vh);}
+    to{transform:translateY(-10vh);}
+}
+
+/* SURPRISE */
+.surprise-box {
+    width:200px;
+    height:200px;
+    background:#fff;
+    color:#ff4b5c;
+    border-radius:15px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    font-weight:bold;
+}
+
+/* DIGITAL TIMER */
+#countdown {
+    background:black;
+    color:#00ffcc;
+    padding:15px 25px;
+    border-radius:10px;
+    font-family:'Courier New', monospace;
+    font-size:40px;
+    letter-spacing:2px;
+    box-shadow:0 0 20px #00ffcc;
+    animation:pulse 1s infinite alternate;
+}
+@keyframes pulse {
+    from {box-shadow:0 0 10px #00ffcc;}
+    to {box-shadow:0 0 25px #00ffcc;}
+}
+</style>
+</head>
+
+<body>
+
+<!-- MUSIC -->
+<iframe width="0" height="0"
+src="https://www.youtube.com/embed/j18MRhEfmPk?autoplay=1&loop=1&playlist=j18MRhEfmPk"
+allow="autoplay"></iframe>
+
+<!-- TIMER LOCK -->
+<div class="container active" id="timerLock">
+    <h2>⏳ Surprise Locked</h2>
+    <p>This surprise will open on <b>6th May 💖</b></p>
+
+    <div id="countdown"></div>
+
+    <p style="max-width:300px;">
+        Heyy 👀💞 wait patiently… something very special is waiting for you 🥺💖  
+        It will be worth it, I promise ✨
+    </p>
+</div>
+
+<!-- LOCK -->
+<div class="container" id="lock">
+    <h2>🔐 Enter Passcode</h2>
+    <input type="password" id="pass">
+    <button onclick="unlock()">Enter</button>
+</div>
+
+<!-- PAGE 1 -->
+<div class="container" id="page1">
+<div class="chat">🎉 Happy Birthday to my cutie pie 🥰💖🎂</div>
+<button onclick="next(2)">Next ➡</button>
+</div>
+
+<!-- PAGE 2 -->
+<div class="container" id="page2">
+<div class="chat">
+You are the best person I have ever met 💖✨  
+nuvu vachi akey naku life lo oka person oka value telichindhi 🫶  
+and ninnu vadili asalu undalekapothuna nenu 😌💞
+</div>
+<button onclick="next(3)">Next ➡</button>
+</div>
+
+<!-- PAGE 3 -->
+<div class="container" id="page3">
+<div class="chat">
+📅 21 Sept 2025 - 11:25 ➝ Forever ♾💫  
+I will be with you till my last breath 🫶💖
+</div>
+<button onclick="next(4)">Next ➡</button>
+</div>
+
+<!-- PAGE 4 -->
+<div class="container" id="page4">
+<div class="chat">
+Hello yogi 💖, you are the best person I have ever met 🌟...from the day 1 of meeting that is 21st.September.2025 at 11.21am at srirangavaram village near medchal. So basically manaki ee english set kadhu kani Neku okati cheputha amma na life chala jarginaye avii ani Neku Chepina avii ani mali okasari gurthuchesukuna naku emi anipistha ledhu ee madhaya endhuku antey Neku chala close aypoina yogi . First of all thank you for coming into my life 😘❤️.
+</div>
+<button onclick="next(5)">Next ➡</button>
+</div>
+
+<!-- PAGE 5 -->
+<div class="container" id="page5">
+<div class="chat">
+Inka enti Na vishayam lo chala care chupisthavu😘 Ela antey naku intha care avasaram ani anukuney la😢 chesinavu anta baga chesthavu amma nanu to be frank nijanga full edupu vasthadhi amma nuvu ala chesthu untey😊. Kani ne life lo okati marichipoku amma nenu eppudu nethoney unta okay na vellu aythe godavapadhudham mali kalisipotham lee endhuku antey idhariki ego's undavu plus Neku na pyna naku ne pyna asalu chupetatam radhu😁. So elageyy life long nethoney undale ani undhi ammu , eppudu ne golla ni baristhu unta amma  enta antey nuveyy oka 100 avataralu lo vachina nenu baristha amma naku anta opika undhi🫂💕. 
+You are My best Buddy yar....🫶🥰 💖
+</div>
+<button onclick="next(6)">Next ➡</button>
+</div>
+
+<!-- PAGE 6 -->
+<div class="container" id="page6">
+<div class="chat">
+
+ Oyee pichi ammai❤️ , nuvu na bangaram ehy endhuku antava na mata eppudu kadhu anavu , nakosam ani chesthavu kani Naku teliyadhu ani anukuntavu kani naku ani telusu nuvu em chesthavo ani class lo kuda naku teliyakunta nanu chusthu👀 untavu mari anii sarlu chudakey babu evaryna chusthe nanu chinna pillagada vedu emana ammey endhuku ani sarlu chusthundhi ani anukuntaru amma . By the happy birthday ra yogulu❤️😘🥰 elaney eno birthdays jarpukovale aadhi kuda nathoney 😉, emi anukoku naku koncham possiveness ekkuva amma na anukuney person vere vallatho matladhuthey naku asalu nachadhu so aa na person nuvey amma so that's all yogi more good and better days are there for you yog amma🥰😘💖
+
+Happy birthday yogi ❤️😘🥰
+</div>
+<button onclick="next(7)">Next ➡</button>
+</div>
+
+<!-- PAGE 7 -->
+<div class="container" id="page7">
+<div class="chat">
+Nuvu chesina panner curry chala bagundey ammu 😋💖🍲 nijanga I loved it ❤️✨.  
+
+Kani koncham chusi cheyu amma 🙈 ehy pani ayna ekkada 😅 nenu okani nekosam ehy unna ani marichipoku amma 🫶💞.  
+
+Eppudu ayna nekosam unta kadha nenu 🤝💖 adhi Neku kuda telusu 🥹✨ dhaniki testing emi avasaram ledhu 😌💯 just be happy amma 😊🌸💖..!  
+I love you ammu❤️✨
+</div>
+<button onclick="next(8)">Next ➡</button>
+</div>
+
+<!-- PAGE 8 -->
+<div class="container" id="page8">
+<h2>💖 Do you love me? 💖</h2>
+<button onclick="yesLove()">YES 💖</button>
+<button onclick="alert('😏 Only YES works')">NO 😜</button>
+<div class="name">Yogi 💖</div>
+</div>
+
+<!-- PAGE 9 -->
+<div class="container" id="page9">
+<div class="surprise-box" id="box">
+🎁 There is a surprise for you 💖
+<button onclick="openSurprise()">Open 🎁</button>
+</div>
+
+<div class="chat" id="finalMsg" style="display:none;">
+It’s me… I’m the surprise for you 🥺💖  
+Please accept me the way I am 🙏💖  
+Forever ♾🥺💖
+</div>
+</div>
+
+<script>
+
+// PASSCODE
+function unlock(){
+    if(document.getElementById("pass").value==="060507"){
+        show(1);
+    } else alert("Wrong Passcode ❌");
+}
+
+// NAV
+function show(n){
+    document.querySelectorAll(".container").forEach(p=>p.classList.remove("active"));
+    document.getElementById("page"+n).classList.add("active");
+}
+function next(n){ show(n); }
+
+// HEARTS
+setInterval(()=>{
+let h=document.createElement("div");
+h.className="heart";
+h.innerHTML="💖";
+h.style.left=Math.random()*100+"vw";
+document.body.appendChild(h);
+setTimeout(()=>h.remove(),5000);
+},300);
+
+// LOVE
+function yesLove(){
+    confetti();
+    setTimeout(()=>show(9),1500);
+}
+
+// CONFETTI
+function confetti(){
+    for(let i=0;i<80;i++){
+        let c=document.createElement("div");
+        c.style.position="absolute";
+        c.style.width="10px";
+        c.style.height="10px";
+        c.style.background="white";
+        c.style.left=Math.random()*100+"vw";
+        c.style.top="0";
+        document.body.appendChild(c);
+
+        let fall=setInterval(()=>{
+            c.style.top=parseInt(c.style.top)+5+"px";
+        },50);
+
+        setTimeout(()=>{clearInterval(fall);c.remove();},3000);
+    }
+}
+
+// SURPRISE
+function openSurprise(){
+    document.getElementById("box").style.display="none";
+    document.getElementById("finalMsg").style.display="block";
+}
+
+/* =========================
+   TIMER + SECRET UNLOCK
+========================= */
+
+const unlockDate = new Date("May 6, 2026 00:00:00").getTime();
+const secretCode = "yogi0605"; // hidden unlock
+let typed = "";
+
+// hidden typing detection
+document.addEventListener("keydown", (e)=>{
+    typed += e.key.toLowerCase();
+
+    if(typed.includes(secretCode)){
+        document.getElementById("timerLock").classList.remove("active");
+        document.getElementById("lock").classList.add("active");
+    }
+
+    if(typed.length > 20){
+        typed = typed.slice(-20);
+    }
+});
+
+// check timer
+function checkTimer(){
+    const now = new Date().getTime();
+
+    if(now >= unlockDate){
+        document.getElementById("timerLock").classList.remove("active");
+        document.getElementById("lock").classList.add("active");
+    } else {
+        startCountdown();
+    }
+}
+
+// countdown
+function startCountdown(){
+    const t = setInterval(()=>{
+        const now = new Date().getTime();
+        const d = unlockDate - now;
+
+        let h = Math.floor(d/(1000*60*60));
+        let m = Math.floor((d/(1000*60))%60);
+        let s = Math.floor((d/1000)%60);
+
+        document.getElementById("countdown").innerHTML =
+            String(h).padStart(2,'0') + ":" +
+            String(m).padStart(2,'0') + ":" +
+            String(s).padStart(2,'0');
+
+        if(d<=0){
+            clearInterval(t);
+            location.reload();
+        }
+    },1000);
+}
+
+// run
+checkTimer();
+
+</script>
+
+</body>
+</html>
